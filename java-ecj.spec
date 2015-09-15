@@ -18,6 +18,7 @@ BuildRequires:	sed >= 4.0
 # for %{_javadir}
 Requires:	jpackage-utils
 Requires:	jre
+Obsoletes:	eclipse-ecj
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
