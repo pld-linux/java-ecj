@@ -3,7 +3,7 @@ Summary:	Eclipse Compiler for Java
 Summary(pl.UTF-8):	Eclipse Compiler for Java - kompilator Javy platformy Eclipse
 Name:		java-ecj
 Version:	4.9
-Release:	1
+Release:	2
 License:	Eclipse Public License v1.0
 Group:		Development/Languages/Java
 Source0:	ftp://sourceware.org/pub/java/ecj-%{version}-source.tar.bz2
@@ -35,7 +35,7 @@ także jako kompilator wsadowy JDT Core.
 %patch0 -p1
 
 %{__sed} -i -e 's/^	ecj /	$(ECJ) /' Makefile
-%{__sed} -i -e 's/-1\.5/-source 1.5/' Makefile
+%{__sed} -i -e 's/-1\.5/-source 1.5 -target 1.5/' Makefile
 
 %build
 #export JAVA_HOME="%{java_home}"
