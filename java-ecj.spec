@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	Eclipse Compiler for Java
 Summary(pl.UTF-8):	Eclipse Compiler for Java - kompilator Javy platformy Eclipse
 Name:		java-ecj
