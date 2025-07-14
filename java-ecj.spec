@@ -31,7 +31,7 @@ także jako kompilator wsadowy JDT Core.
 
 %prep
 %setup -q -c
-%patch0 -p1
+%patch -P0 -p1
 
 %{__sed} -i -e 's/^	ecj /	$(ECJ) /' Makefile
 %{__sed} -i -e 's/-1\.5/-source 1.5 -target 1.5/' Makefile
